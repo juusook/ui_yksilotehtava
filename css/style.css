@@ -1,0 +1,137 @@
+ * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+
+        }
+
+        p {
+            color: black;;
+            font-size: 1rem;
+            margin-bottom: 5rem;
+        }
+
+        main p {
+            color: black;
+            position: relative;
+            z-index: 1;
+            margin-bottom: 2rem;
+        }
+
+        .text_color {
+            color:black;;
+        }
+    
+        .box {
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            color: aliceblue;
+            float: left;
+        }
+      
+        .clear { clear: both;}
+    
+
+        img {
+            position: relative;
+            float: left;
+            width: 25%;
+            margin: 2rem auto;
+            padding-right: 1em;
+            border-radius: 1.5rem;
+        }
+
+        
+        main {
+            position: relative;
+            border: 3px solid black;
+            padding-left: 1em;
+            width: 75%;
+            margin: 1em auto;
+            margin-bottom: 10rem;
+            background-color: rgb(249, 249, 241);
+        }
+
+        main::before {
+            content: "";
+            background-image: url("./images/food.png");
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background-position: top center;
+            opacity: 0.15;
+        }
+        
+
+        .restaurant_img {
+
+        }
+
+        footer {
+            background-color: rgb(147, 36, 36);
+            height: 50px;
+            text-align: center;
+            padding-top: 1em;
+            box-sizing: border-box;
+        }
+
+        a {
+            color: white;
+        }
+
+        h2::first-letter {
+            font-size: 40px;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            float: left;
+            padding: 2rem;
+        }
+
+        li:hover {
+            background-color: rgb(87, 87, 87);
+        }
+
+        nav {
+            width: 75%;
+            margin: 0 auto;
+        }
+
+        ul.horizontal{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(62, 53, 65);
+            box-shadow: 0px 4px 2px -2px rgb(93, 93, 93);
+        }
+
+        ul, menu, dir {
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            padding-inline-start: 40px;
+        }
+
+        a:link {
+            text-decoration: none;
+            
+        }
+        
+
