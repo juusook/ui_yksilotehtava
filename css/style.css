@@ -7,6 +7,11 @@
 
         }
 
+        nav {
+            width: 75%;
+            margin: 0 auto;
+        }
+
         p {
             color: black;;
             font-size: 1rem;
@@ -38,10 +43,9 @@
         img {
             position: relative;
             float: left;
-            width: 25%;
-            margin: 2rem auto;
-            padding-right: 1em;
-            border-radius: 1.5rem;
+            width: 30%;
+            margin: 2em 1em;
+            border-radius: 1em;
         }
 
         
@@ -57,7 +61,7 @@
 
         main::before {
             content: "";
-            background-image: url("./images/food.png");
+            background-image: url("../images/food.png");
             background-size: cover;
             position: absolute;
             top: 0;
@@ -66,6 +70,17 @@
             right: 0;
             background-position: top center;
             opacity: 0.15;
+            position: relative;
+        }
+
+        .burger {
+            position: absolute;
+            width: 200px;
+            height: auto;
+            top: -125px;
+            left: 70%;
+            transform: rotate(45deg);
+            z-index: 1;
         }
         
 
@@ -108,11 +123,6 @@
             background-color: rgb(87, 87, 87);
         }
 
-        nav {
-            width: 75%;
-            margin: 0 auto;
-        }
-
         ul.horizontal{
             list-style-type: none;
             margin: 0;
@@ -133,5 +143,6 @@
             text-decoration: none;
             
         }
+
         
 
