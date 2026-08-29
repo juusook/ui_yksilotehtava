@@ -1,10 +1,10 @@
  :root {
-    --ivory: #f4f3ee;
-    --lime-green: #92C800;
-    --vintage-grape: #bcb8b1;
-    --midnight-violet: #8a817c;
-    --Powder-Blush: #e0afa0;
-    --shadow-grey: #463f3a;
+    --ivory: #EBEFEE;
+    --beige: #CCB499;
+    --clay: #C8906D;
+    --tile-orange: #BB6C43;
+    --shade: #4A413C;
+
     --border-radius-medium: 16px;
  }
  
@@ -16,6 +16,7 @@
     
 body {
     margin: 0;
+    background-color: var(--ivory);
 }
 
 nav {
@@ -30,7 +31,7 @@ ul {
 
 li {
     float: left;
-    padding: 2rem;
+    padding: 1.5rem;
     margin-right: 100px;
     }
 
@@ -46,7 +47,7 @@ ul.horizontal{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: var(--midnight-violet);
+    background-color: var(--shade);
     box-shadow: 0px 4px 2px -2px rgb(93, 93, 93);
 }
 
@@ -59,16 +60,23 @@ ul, menu, dir {
 
 a:link {
     text-decoration: none;
+    color: var(--ivory);
 }
 
 p {
-    color: black;;
+    color: var(--shade);;
     font-size: 1rem;
     margin-bottom: 5rem;
-        }
+}
+p#lisaa {
+    margin-bottom: 300px;
+    margin-top: 100px;
+    text-align: center;
+}
+
 
 main p {
-    color: black;
+    color: var(--shade);
     position: relative;
     z-index: 1;
     margin-bottom: 2rem;
@@ -91,17 +99,19 @@ img {
     width: 30%;
     margin: 2em 1em;
     border-radius: 1em;
+    filter: drop-shadow(-6px 5px 3px var(--shade));
 }
 
 
 main {
     position: relative;
-    border: 1px solid black;
+    border: 1px solid var(--beige);
     padding-left: 1em;
     width: 75%;
     margin: 1em auto;
     margin-bottom: 10rem;
     background-color: var(--ivory);
+    color: var(--shade);
 }
 
 main::before {
@@ -120,22 +130,28 @@ main::before {
 
 .burger {
     position: absolute;
-    width: 140px;
+    width: 150px;
     height: auto;
-    top: -110px;
+    top: -130px;
     left: 70%;
     transform: rotate(90deg);
     z-index: 1;
     filter: blur(0.25px);
+    filter: drop-shadow(4px 6px 4px var(--shade));
 }
         
 footer {
-    background-color: var(--midnight-violet);
-    height: 50px;
+    background-color: var(--shade);
+    height: 75px;
+    width: 100%;
     text-align: center;
     padding-top: 1em;
     box-sizing: border-box;
     color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
 }
 
 a {
@@ -166,9 +182,15 @@ button#open {
     display: block;
     font-size: 0.8em;
     text-align: center;
-    margin: auto;
+    margin: 50px auto;
+    border-color: var(--shade);
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+button#open:hover {
+    background-color: var(--shade);
+    color: var(--ivory);
     border-color: var(--ivory);
-    padding: 10px 20px
 }
 form {
 /*     border: 1px solid #d8d8d8; */
@@ -179,7 +201,7 @@ form {
 }
 dialog > div {
     margin: 1rem;
-    border: 2px solid var(--Powder-Blush);
+    border: 2px solid var(--beige);
     border-radius: var(--border-radius-medium);
     padding: 2em 1em;
 }
