@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="css/style.css">
 	<title>Positioning Items</title>
 	<meta charset="UTF-8">
+    <script src="./js/index.js" defer></script>
     </head>
 
 <body>
@@ -17,8 +18,19 @@
             <li><a href="javascript:void(0)">Yhteystiedot</a></li>
         </ul>
     </nav>
-    
-    <p>Tänne lisää sisältöä seuraavina viikkoina</p>
+    <p>Tänne lisää sisältöä</p>
+
+    <button id="open">AVAA</button>
+    <dialog id="dialog">
+        <form>
+        <label for="fname">first name:</label> <br>
+        <input type="text" id="fname"><br>
+        <label for="lname">last name:</label> <br>
+        <input type="text" id="lname"><br><br>
+        <button id="close">Close</button>
+        <button id="subBtn">SUBMIT</button>
+        </form>
+  </dialog>
 
     <main class="clear clearfix">
         <img class="burger" src="./images/burger.png" alt="Burger explosion">

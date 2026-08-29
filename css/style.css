@@ -1,148 +1,177 @@
- * {
-            box-sizing: border-box;
-        }
-        
-        body {
-            margin: 0;
-
-        }
-
-        nav {
-            width: 75%;
-            margin: 0 auto;
-        }
-
-        p {
-            color: black;;
-            font-size: 1rem;
-            margin-bottom: 5rem;
-        }
-
-        main p {
-            color: black;
-            position: relative;
-            z-index: 1;
-            margin-bottom: 2rem;
-        }
-
-        .text_color {
-            color:black;;
-        }
+ :root {
+    --ivory: #f4f3ee;
+    --lime-green: #92C800;
+    --vintage-grape: #bcb8b1;
+    --midnight-violet: #8a817c;
+    --Powder-Blush: #e0afa0;
+    --shadow-grey: #463f3a;
+ }
+ 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
     
-        .box {
-            height: 100px;
-            width: 100px;
-            border: 2px solid black;
-            color: aliceblue;
-            float: left;
-        }
-      
-        .clear { clear: both;}
-    
+body {
+    margin: 0;
+}
 
-        img {
-            position: relative;
-            float: left;
-            width: 30%;
-            margin: 2em 1em;
-            border-radius: 1em;
+nav {
+    width: 75%;
+    margin: 0 auto;
+    z-index: 200;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    float: left;
+    padding: 2rem;
+    margin-right: 100px;
+    }
+
+li:hover {
+/*     background-color: var(--shadow-grey); */
+    text-decoration: 1px underline;
+    text-underline-offset: 2px;
+    color: white;
+}
+
+ul.horizontal{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--midnight-violet);
+    box-shadow: 0px 4px 2px -2px rgb(93, 93, 93);
+}
+
+ul, menu, dir {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-inline-start: 40px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+p {
+    color: black;;
+    font-size: 1rem;
+    margin-bottom: 5rem;
         }
 
+main p {
+    color: black;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 2rem;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    border: 2px solid var(--spicy-paprika);
+    color: aliceblue;
+    float: left;
+}
+
+.clear { clear: both;}
+
+
+img {
+    position: relative;
+    float: left;
+    width: 30%;
+    margin: 2em 1em;
+    border-radius: 1em;
+}
+
+
+main {
+    position: relative;
+    border: 1px solid black;
+    padding-left: 1em;
+    width: 75%;
+    margin: 1em auto;
+    margin-bottom: 10rem;
+    background-color: var(--ivory);
+}
+
+main::before {
+    content: "";
+    background-image: url("../images/food.png");
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-position: top center;
+    opacity: 0.2;
+    z-index: 1;
+}
+
+.burger {
+    position: absolute;
+    width: 150px;
+    height: auto;
+    top: -100px;
+    left: 75%;
+    transform: rotate(45deg);
+    z-index: 1;
+        }
         
-        main {
-            position: relative;
-            border: 3px solid black;
-            padding-left: 1em;
-            width: 75%;
-            margin: 1em auto;
-            margin-bottom: 10rem;
-            background-color: rgb(249, 249, 241);
-        }
+footer {
+    background-color: var(--midnight-violet);
+    height: 50px;
+    text-align: center;
+    padding-top: 1em;
+    box-sizing: border-box;
+    color: white;
+}
 
-        main::before {
-            content: "";
-            background-image: url("../images/food.png");
-            background-size: cover;
-            position: absolute;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            background-position: top center;
-            opacity: 0.15;
-            position: relative;
-        }
+a {
+    color: white;
+}
 
-        .burger {
-            position: absolute;
-            width: 200px;
-            height: auto;
-            top: -125px;
-            left: 70%;
-            transform: rotate(45deg);
-            z-index: 1;
-        }
-        
+h2::first-letter {
+    font-size: 40px;
+}
 
-        .restaurant_img {
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
 
-        }
-
-        footer {
-            background-color: rgb(147, 36, 36);
-            height: 50px;
-            text-align: center;
-            padding-top: 1em;
-            box-sizing: border-box;
-        }
-
-        a {
-            color: white;
-        }
-
-        h2::first-letter {
-            font-size: 40px;
-        }
-
-        .clearfix::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
-
-        ul {
-            list-style-type: none;
-        }
-
-        li {
-            float: left;
-            padding: 2rem;
-        }
-
-        li:hover {
-            background-color: rgb(87, 87, 87);
-        }
-
-        ul.horizontal{
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: rgb(62, 53, 65);
-            box-shadow: 0px 4px 2px -2px rgb(93, 93, 93);
-        }
-
-        ul, menu, dir {
-            display: block;
-            margin-block-start: 1em;
-            margin-block-end: 1em;
-            padding-inline-start: 40px;
-        }
-
-        a:link {
-            text-decoration: none;
-            
-        }
-
-        
-
+dialog {
+    width: max-content;
+    margin: 400px auto;
+    text-align: center;
+    border: 1px solid lightgray;
+    border-radius: 16px;
+}
+dialog::backdrop {
+    backdrop-filter: blur(5px);
+}        
+button#open {
+    display: block;
+    font-size: 0.8em;
+    text-align: center;
+    margin: auto;
+    border-color: var(--ivory);
+    padding: 10px 20px
+}
+form {
+    border: 1px solid #d8d8d8;
+    width: max-content;
+    padding: 16px;
+    display: block;
+    border-radius: 16px;
+}
