@@ -18,18 +18,30 @@
             <li><a href="javascript:void(0)">Yhteystiedot</a></li>
         </ul>
     </nav>
+    <div id="hero"></div>
     <p id="lisaa">Tänne lisää sisältöä</p>
 
     <button id="open">AVAA</button>
     <dialog id="dialog">
         <div id="divDialog">
             <form>
-            <label for="name">Name:</label> <br>
-            <input type="text" id="name"><br>
-            <label for="email">Email:</label> <br>
-            <input type="email" id="email"><br>
+            <div>
+                <label for="name">Name:</label> <br>
+                <input type="text" id="name" name="name"><br>
+            </div>
+            <div>
+                <label for="email">Email:</label> <br>
+                <input type="email" id="email" name="email"><br>
+            </div>
+            <div>
             <label for="password">Password:</label> <br>
-            <input type="password" id="password"><br><br>
+            <input 
+            type="password" 
+            id="password" 
+            name="password"
+            pattern="(?=.*[A-Z])(?=.*\d).+"
+            ><br><br>
+            </div>
             <button id="close">Close</button>
             <button id="subBtn">SUBMIT</button>
             </form>

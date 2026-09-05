@@ -21,9 +21,14 @@ body {
 }
 
 nav {
-    width: 75%;
-    margin: 0 auto;
+    width: 60%;
+    height: 66px;
+    margin: 0 auto 25px auto;
     z-index: 200;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 ul {
@@ -64,10 +69,23 @@ a:link {
     color: var(--ivory);
 }
 
+div#hero {
+    background-image: url(../images/ella-olson.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    margin: 70px auto 0 auto;
+    width: 60%;
+    height: 35vh;
+    border-radius: 0 0 16px 16px;
+}
+
 p {
     color: var(--shade);;
     font-size: 1rem;
     margin-bottom: 5rem;
+    margin-top: 25px;
 }
 p#lisaa {
     margin-bottom: 300px;
@@ -101,16 +119,9 @@ main img {
     width: 280px;
     margin: 2em 1em;
     border-radius: 1em;
-/*     filter: drop-shadow(-5px 4px 2px var(--shade)); */
 }
 
 .restaurant_img {
-    /* Shorter and sharper box shadow */
-/*    box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
-              0 2px 2px rgba(0,0,0,0.11), 
-              0 4px 4px rgba(0,0,0,0.11), 
-              0 6px 8px rgba(0,0,0,0.11),
-              0 8px 16px rgba(0,0,0,0.11); */
     margin-right: 40px;
     filter: grayscale(0%);
     z-index: 10;
@@ -151,7 +162,7 @@ main::before {
     left: 70%;
     transform: rotate(90deg);
     z-index: 1;
-    filter: blur(0.25px) drop-shadow(4px 6px 2px var(--shade));
+    filter: drop-shadow(4px 6px 2px var(--shade));
 }
         
 footer {
@@ -162,9 +173,6 @@ footer {
     padding-top: 1em;
     box-sizing: border-box;
     color: white;
-    position: fixed;
-    bottom: 0;
-    left: 0;
     z-index: 100;
 }
 
@@ -173,7 +181,7 @@ a {
 }
 h2 {
     margin-top: 10px;
-    color: var(--shade);
+    color: rgb(70, 68, 68);
     z-index: 20;
 }
 
@@ -205,6 +213,7 @@ button#open {
     border-color: var(--shade);
     padding: 10px 20px;
     transition: background-color 0.3s ease;
+    background-color: var(--ivory);
 }
 button#open:hover {
     background-color: var(--shade);
@@ -223,4 +232,32 @@ dialog > div {
     border: 2px solid var(--beige);
     border-radius: var(--border-radius-medium);
     padding: 2em 1em;
+}
+
+@media screen and (max-width: 1150px) {
+    .restaurant_img {
+    float: none;
+    display: block;
+    margin: 50px auto 0px auto;
+    width: 40vw;
+    }
+    li {
+        padding: 1.5rem 0.5em;
+        height: 100%;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    nav li{
+        float: none;
+        display: block;
+        width: 100%;
+    }
+    nav, div#hero {
+        width: 50vw;
+    }
+    div#hero {
+        margin-top: 220px;
+    }
 }
